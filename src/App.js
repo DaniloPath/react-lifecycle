@@ -32,10 +32,9 @@ export default class App extends Component {
       <div>
         <div className="switch">
           <label>
-            Off
+            Mostrar Usuários: 
             <input type="checkbox"/>
-            <span className="lever"></span>
-            On
+            <span className="lever"></span>            
           </label>
         </div>        
         <hr/>
