@@ -28,6 +28,19 @@ export default class App extends Component {
   }
   
   render() {
-    return <ProjetoBase />;
+    return (
+      <div>
+        <div className="switch">
+          <label>
+            Off
+            <input type="checkbox"/>
+            <span className="lever"></span>
+            On
+          </label>
+        </div>        
+        <hr/>
+        <div>Users</div>
+      </div>
+    )
   }
 }
