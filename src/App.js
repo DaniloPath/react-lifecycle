@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Users from './components/users/Users';
 
 
 export default class App extends Component {
@@ -6,7 +7,7 @@ export default class App extends Component {
     super()
 
     this.state = {
-      user: [],
+      users: [],
       showUsers: false,
     }
   }
@@ -33,7 +34,7 @@ export default class App extends Component {
   }
   
   render() {
-    const {showUsers} = this.state
+    const {showUsers, users} = this.state
 
     return (
       <div>
@@ -45,7 +46,7 @@ export default class App extends Component {
           </label>
         </div>        
         <hr/>
-        {showUsers && <div>Users</div>}
+        {showUsers && <Users users={users} />}
       </div>
     )
   }
