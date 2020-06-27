@@ -24,8 +24,8 @@ export default class App extends Component {
     console.log("componentDidUpdate no App.js")
   }
 
-  componentDidWillUmMount() {
-    console.log("componentDidWillUmMount no App.js")
+  componentDidWillUnmount() {
+    console.log("componentWillUmmount no App.js")
   }
 
   handleShowUsers = (event) => {
